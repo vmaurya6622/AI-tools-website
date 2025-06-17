@@ -84,7 +84,7 @@ The interface dynamically categorizes tools and uses a video background for a fu
 
 ### 🔎 Tool Selection
 
-![Tool Selection](img.png)
+![Tool Selection](img2.png)
 
 ### 📤 Output Section
 
