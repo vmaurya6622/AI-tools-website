@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Tools Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="fixed top-0 left-0 w-full h-full object-cover -z-10"
+    >
+      <source src="thumbnails/background.mp4" type="video/mp4" />
+    </video>
+
+    <div class="max-w-7xl mx-auto p-6">
+  <!-- Top Center Heading -->
+  <h1 class="text-4xl font-bold text-center mb-8 w-full text-white">🧠 AI Tools Hub</h1>
+
+  <!-- Main Split Container -->
+  <div class="flex flex-col md:flex-row gap-8">
+    <!-- Left Column: Tools -->
+    <div class="w-full md:w-1/2">
+      <!-- Category: Common Tools -->
+        <div class="col-span-full mt-4 mb-2">
+          <h2 class="text-xl font-bold text-left text-white">
+            <span class="text-red-700">&lt;/&gt;</span> Common Tools
+          </h2>
+        </div>
+        <div
+          id="toolContainer"
+          class="grid grid-cols-6 sm:grid-cols-6 md:grid-cols-6 gap-3 mb-6"
+        >
+        <!-- Thumbnails (add more if needed) -->
+          <div
+            class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center"
+            data-tool="summarize"
+          ><div class="absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDAUuf3C5oNuIBm7HNa5Afh0hze5xqRgrbhQ&s"
+              alt="Summarizer"
+            />
+            <span class="mt-2 text-sm font-semibold text-bottom">Summarizer</span>
+          </div>
+          <div
+            class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center"
+            data-tool="math"
+          ><div class="absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/004/229/128/non_2x/calculator-icon-logo-free-vector.jpg"
+              alt="Formula Solver"
+            />
+            <span class="mt-2 text-sm font-semibold text-bottom"
+              >Formula Solver</span
+            >
+          </div>
+          <div
+            class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center"
+            data-tool="translate"
+          ><div class="absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+            <img
+              src="https://img.freepik.com/premium-vector/translator-app-logo-language-translation-icon_349999-1256.jpg"
+              alt="Translator"
+            />
+            <span class="mt-2 text-sm font-semibold text-bottom">Translator</span>
+          </div>
+          <div
+            class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center"
+            data-tool="explain"
+          ><div class="absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+            <img
+              src="https://r2.erweima.ai/i/V1u6uflBQu6qGGPqBZWbpg.png"
+              alt="Concept Explainer"
+            />
+            <span class="mt-2 text-sm font-semibold text-bottom">Explainer</span>
+          </div>
+          <div
+            class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center"
+            data-tool="code"
+          ><div class="absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+            <img
+              src="https://www.creativefabrica.com/wp-content/uploads/2018/11/Code-Logo-by-Friendesign-Acongraphic-2.jpg"
+              alt="Code Generator"
+            />
+            <span class="mt-2 text-sm font-semibold text-bottom"
+              >Code Generator</span
+            >
+          </div>
+          <div
+            class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center"
+            data-tool="grammar"
+          ><div class="absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+            <img
+              src="https://w7.pngwing.com/pngs/740/258/png-transparent-spell-checker-spelling-grammar-checker-typing-free-miscellaneous-text-logo.png"
+              alt="Grammar Fixer"
+            />
+            <span class="mt-2 text-sm font-semibold text-bottom"
+              >Grammar Fixer</span
+            >
+          </div>
+        </div>
+        <!-- Additional Tool Cards (Communication Department) -->
+        <!-- Communication Tools Section Header -->
+        <!-- Communication Tools Toggle Button -->
+      <div class="col-span-full mt-4 mb-2">
+        <button
+          class="w-full text-xl font-bold text-white bg-purple-700 py-2 px-4 rounded mb-2"
+          data-toggle="communicationTools"
+        >
+          📣 Communication Tools
+        </button>
+      </div>
+
+<!-- Communication Tools Section with Animation -->
+      <div
+        id="communicationTools"
+        class="tool-section max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out"
+      >
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-6">
+          <!-- Tool Cards -->
+          <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="emailTone">
+            <img src="thumbnails/emialtone.jpg" alt="Email Tone" class="rounded-[30px]" />
+            <span class="mt-2 text-sm font-semibold text-bottom">Email Tone Optimizer</span>
+          </div>
+
+          <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="pressRelease">
+            <img src="thumbnails/press_release.jpg" alt="Press Release" class="rounded-[30px]" />
+            <span class="mt-2 text-sm font-semibold text-bottom">Press Release Generator</span>
+          </div>
+
+          <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="speechWriter">
+            <img src="thumbnails/speech writer ai  generator thumbnail.jpg" alt="Speech Writer" class="rounded-[33px]" />
+            <span class="mt-2 text-sm font-semibold text-bottom">Speech Writer AI</span>
+          </div>
+
+          <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="crisisComm">
+            <img src="thumbnails/cricis comm assistant  generator thumbnail.jpg" alt="Crisis Assistant" class="rounded-[33px]" />
+            <span class="mt-2 text-sm font-semibold text-bottom">Crisis Comm Assistant</span>
+          </div>
+
+          <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="memoGen">
+            <img src="thumbnails/memo generator  generator thumbnail.jpg" alt="Memo Generator" class="rounded-[33px]" />
+            <span class="mt-2 text-sm font-semibold text-bottom">Memo Generator</span>
+          </div>
+
+          <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="socialMedia">
+            <img src="thumbnails/social media content  generator thumbnail.jpg" alt="Social Media" class="rounded-[33px]" />
+            <span class="mt-2 text-sm font-semibold text-bottom">Social Media Content</span>
+          </div>
+
+          <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="sentiment">
+            <img src="thumbnails/sentiment analyser  generator thumbnail.jpg" alt="Sentiment" class="rounded-[33px]" />
+            <span class="mt-2 text-sm font-semibold text-bottom">Sentiment Analyzer</span>
+          </div>
+
+          <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="slideAssistant">
+            <img src="https://cdn-icons-png.flaticon.com/512/334/334047.png" alt="Slide Assistant" />
+            <span class="mt-2 text-sm font-semibold text-bottom">Slide Assistant</span>
+          </div>
+
+          <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="voiceEnhancer">
+            <img src="thumbnails/voice enhancer thumbnail.jpg" alt="Voice Enhancer" class="rounded-[33px]" />
+            <span class="mt-2 text-sm font-semibold text-bottom">Voice Enhancer</span>
+          </div>
+
+          <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="meetingSummary">
+            <img src="thumbnails/meeting summarier thumbnail.jpg" alt="Meeting Summary" class="rounded-[103px]" />
+            <span class="mt-2 text-sm font-semibold text-bottom">Meeting Summarizer</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Category: Engineering Tools -->
+      <div class="mb-4">
+        <button
+          class="w-full text-xl font-bold text-white bg-pink-700 py-2 px-4 rounded mb-2"
+          data-toggle="engineeringTools"
+        >
+          ⚙️ Electronics Engineering Tools
+        </button>
+          <div id="engineeringTools" class="tool-section max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-6">
+
+              <!-- Circuit Design Helper -->
+              <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="circuitDesign">
+                <img src="thumbnails\Engineering tools\circuit design helper thumbnail.jpg" alt="Circuit Design Helper" class="rounded-lg" />
+                <span class="mt-2 text-sm font-semibold text-bottom">Circuit Design Helper</span>
+              </div>
+
+              <!-- Signal Analysis Tool -->
+              <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="signalAnalysis">
+                <img src="thumbnails\Engineering tools\signal analysis tool  thumbnail.jpg" alt="Signal Analysis Tool" class="rounded-lg" />
+                <span class="mt-2 text-sm font-semibold text-bottom">Signal Analysis Tool</span>
+              </div>
+
+              <!-- PCB Layout Validator -->
+              <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="pcbValidator">
+                <img src="thumbnails\Engineering tools\pcb layout validation  thumbnail.jpg" alt="PCB Layout Validator" class="rounded-lg" />
+                <span class="mt-2 text-sm font-semibold text-bottom">PCB Layout Validator</span>
+              </div>
+
+              <!-- Component Recommendation Engine -->
+              <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="componentRecommender">
+                <img src="thumbnails\Engineering tools\recommendation.jpg" alt="Component Recommendation" class="rounded-lg" />
+                <span class="mt-2 text-sm font-semibold text-bottom">Component Recommend</span>
+              </div>
+
+              <!-- IoT Configuration Wizard -->
+              <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="iotWizard">
+                <img src="thumbnails\Engineering tools\Iot config wizard  thumbnail.jpg" alt="IoT Configuration Wizard" class="rounded-lg" />
+                <span class="mt-2 text-sm font-semibold text-bottom">IoT Config Wizard</span>
+              </div>
+
+              <!-- Power Consumption Optimizer -->
+              <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="powerOptimizer">
+                <img src="thumbnails\Engineering tools\power optimiser  thumbnail.jpg" alt="Power Optimizer" class="rounded-lg" />
+                <span class="mt-2 text-sm font-semibold text-bottom">Power Optimizer</span>
+              </div>
+
+              <!-- Schematic-to-Code Converter -->
+              <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="schematicToCode">
+                <img src="thumbnails\Engineering tools\schematic to code  thumbnail.jpg" alt="Schematic to Code" class="rounded-lg" />
+                <span class="mt-2 text-sm font-semibold text-bottom">Schematic to Code</span>
+              </div>
+
+              <!-- Sensor Data Analyzer -->
+              <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="sensorAnalyzer">
+                <img src="thumbnails\Engineering tools\sensor analyser.jpg" alt="Sensor Analyzer" class="rounded-lg" />
+                <span class="mt-2 text-sm font-semibold text-bottom">Sensor Analyzer</span>
+              </div>
+
+              <!-- Embedded Debug Helper -->
+              <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="embeddedDebugger">
+                <img src="thumbnails\Engineering tools\embedded debugger.png" alt="Embedded Debug Helper" class="rounded-lg" />
+                <span class="mt-2 text-sm font-semibold text-bottom">Embedded Debug Helper</span>
+              </div>
+
+              <!-- RF Signal Strength Visualizer -->
+              <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center" data-tool="rfVisualizer">
+                <img src="thumbnails\Engineering tools\rf visualiser.jpg" alt="RF Visualizer" class="rounded-lg" />
+                <span class="mt-2 text-sm font-semibold text-bottom">RF Visualizer</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+            <!-- Toggle Button (place this wherever appropriate) -->
+        <div class="col-span-full mt-4 mb-2">
+          <button
+            class="w-full text-xl font-bold text-white bg-yellow-700 py-2 px-4 rounded mb-2"
+            data-toggle="csTools"
+          >
+            💻 Computer Science / IT Tools
+          </button>
+        </div>
+          <!-- CS Tools Container -->
+            <div id="csTools" class="tool-section max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-6">
+              <!-- Tool Cards -->
+                <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center relative" data-tool="algorithmExplain" role="button" aria-label="Select Code Explainer tool">
+                <div class="overlay absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+                  <img src="thumbnails/CS tools/code_explainer.png" alt="Code Explainer" class="rounded-lg w-full h-auto" />
+                  <span class="mt-2 text-sm font-semibold text-center">Code Explainer</span>
+                </div>
+
+                <!-- Bug Fix Assistant -->
+                <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center relative" data-tool="codeDebug" role="button" aria-label="Select Bug Fix Assistant tool">
+                  <div class="overlay absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+                  <img src="thumbnails/CS tools/bug fix.jpg" alt="Bug Fix Assistant" class="rounded-lg w-full h-auto" />
+                  <span class="mt-2 text-sm font-semibold text-center">Bug Fix Assistant</span>
+                </div>
+
+                <!-- API Integration Wizard -->
+                <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center relative" data-tool="apiDesign" role="button" aria-label="Select API Integration Wizard tool">
+                  <div class="overlay absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+                  <img src="thumbnails/CS tools/api integration.png" alt="API Integration Wizard" class="rounded-lg w-full h-auto" />
+                  <span class="mt-2 text-sm font-semibold text-center">API Integration Wizard</span>
+                </div>
+
+                <!-- System Architecture Mapper -->
+                <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center relative" data-tool="systemArchitecture" role="button" aria-label="Select System Architecture Mapper tool">
+                  <div class="overlay absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+                  <img src="thumbnails/CS tools/system arch.png" alt="System Architecture Mapper" class="rounded-lg w-full h-auto" />
+                  <span class="mt-2 text-sm font-semibold text-center">System Architecture Mapper</span>
+                </div>
+
+                <!-- Version Control Summarizer -->
+                <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center relative" data-tool="cybersecurityAudit" role="button" aria-label="Select Version Control Summarizer tool">
+                  <div class="overlay absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+                  <img src="thumbnails/CS tools/version control.jpg" alt="Version Control Summarizer" class="rounded-lg w-full h-auto" />
+                  <span class="mt-2 text-sm font-semibold text-center">Version Control Summarizer</span>
+                </div>
+
+                <!-- SQL Query Generator -->
+                <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center relative" data-tool="databaseQuery" role="button" aria-label="Select SQL Query Generator tool">
+                  <div class="overlay absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+                  <img src="thumbnails/CS tools/SQL.jpeg" alt="SQL Query Generator" class="rounded-lg w-full h-auto" />
+                  <span class="mt-2 text-sm font-semibold text-center">SQL Query Generator</span>
+                </div>
+
+                <!-- Network Troubleshooter AI -->
+                <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center relative" data-tool="networkConfig" role="button" aria-label="Select Network Troubleshooter AI tool">
+                  <div class="overlay absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+                  <img src="thumbnails/CS tools/network troubleshoot.webp" alt="Network Troubleshooter AI" class="rounded-lg w-full h-auto" />
+                  <span class="mt-2 text-sm font-semibold text-center">Network Troubleshooter AI</span>
+                </div>
+
+                <!-- Codebase Search Assistant -->
+                <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center relative" data-tool="codeOptimize" role="button" aria-label="Select Codebase Search Assistant tool">
+                  <div class="overlay absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+                  <img src="thumbnails/CS tools/codebase.png" alt="Codebase Search Assistant" class="rounded-lg w-full h-auto" />
+                  <span class="mt-2 text-sm font-semibold text-center">Codebase Search Assistant</span>
+                </div>
+
+                <!-- Algorithm Visualizer -->
+                <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center relative" data-tool="dataProcessing" role="button" aria-label="Select Algorithm Visualizer tool">
+                  <div class="overlay absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+                  <img src="thumbnails/CS tools/algorithm visualiser.jpg" alt="Algorithm Visualizer" class="rounded-lg w-full h-auto" />
+                  <span class="mt-2 text-sm font-semibold text-center">Algorithm Visualizer</span>
+                </div>
+
+                <!-- Tech Stack Suggestion Tool -->
+                <div class="tool-card cursor-pointer bg-white rounded-lg shadow p-3 flex flex-col items-center relative" data-tool="cloudSetup" role="button" aria-label="Select Tech Stack Suggestion Tool">
+                  <div class="overlay absolute inset-0 bg-blue-600 opacity-0 rounded-lg pointer-events-none transition-opacity duration-300"></div>
+                  <img src="thumbnails/CS tools/tech stack.jpg" alt="Tech Stack Suggestion Tool" class="rounded-lg w-full h-auto" />
+                  <span class="mt-2 text-sm font-semibold text-center">Tech Stack Suggestion Tool</span>
+                </div>
+            </div>
+          </div>
+        </div>
+            <!-- User Input -->
+        <div class="w-full md:w-1/2 flex flex-col justify-start">
+          <textarea
+            id="userInput"
+            rows="7"
+            class="w-full p-3 border rounded mb-4"
+            placeholder="Enter your text or question here..."
+          ></textarea>
+
+          <button
+              id="submitBtn"
+              class="relative bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded w-full font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg hover:shadow-xl overflow-hidden group"
+            >
+              <span class="relative z-10"> Run AI Tool</span>
+              <span
+                class="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-20 blur-sm transition-opacity duration-500"
+              ></span>
+            </button>
+            <!-- Output -->
+            <div
+              id="output"
+              class="bg-white rounded shadow p-4 mt-6 min-h-[400px] whitespace-pre-wrap"
+            ></div>
+        </div>
+      </div>
+    <script src="style.js"></script>
+  </body>
+</html>

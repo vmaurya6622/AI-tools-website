@@ -1,0 +1,104 @@
+Communication Department (10 Tools)
+Email Tone Optimizer – Adjusts email tone (formal, friendly, persuasive, etc.)
+
+Press Release Generator – Creates press releases based on bullet points.
+
+Speech Writer AI – Generates speeches based on topic and audience.
+
+Crisis Communication Assistant – Suggests PR responses during a crisis.
+
+Internal Memo Generator – Drafts professional memos for internal communication.
+
+Social Media Content Generator – Creates posts tailored for each platform.
+
+Sentiment Analyzer – Analyzes public sentiment on press releases.
+
+Visual Slide Assistant – Designs presentation slides from text summaries.
+
+Voice Clarity Enhancer – Improves voice recordings for better delivery.
+
+Meeting Transcript Summarizer – Converts meeting audio to concise summaries.
+
+🔹 Electronics & Electrical Engineering (10 Tools)
+Circuit Design Helper – Suggests components and simulates circuits.
+
+Signal Analysis Tool – Analyzes waveform data and noise patterns.
+
+PCB Layout Validator – Checks PCB designs for common errors.
+
+Component Recommendation Engine – Suggests compatible components.
+
+IoT Configuration Wizard – Helps configure and simulate IoT systems.
+
+Power Consumption Optimizer – Analyzes circuits for energy efficiency.
+
+Schematic-to-Code Converter – Converts circuit logic to embedded code.
+
+Sensor Data Analyzer – Interprets data from various sensors.
+
+Embedded Debug Helper – Suggests fixes for microcontroller issues.
+
+RF Signal Strength Visualizer – Maps signal strength visually.
+
+🔹 Computer Science / IT Department (10 Tools)
+Code Explainer – Breaks down complex code into simple English.
+
+Bug Fix Assistant – Detects bugs and suggests code corrections.
+
+API Integration Wizard – Generates boilerplate code for API connections.
+
+System Architecture Mapper – Builds system flow diagrams.
+
+Version Control Summarizer – Summarizes git commit histories.
+
+SQL Query Generator – Creates queries from plain English questions.
+
+Network Troubleshooter AI – Diagnoses network setup and latency issues.
+
+Codebase Search Assistant – AI-powered code search with explanations.
+
+Algorithm Visualizer – Illustrates how sorting and search algorithms work.
+
+Tech Stack Suggestion Tool – Recommends suitable tech stacks for projects.
+
+🔹 Finance & Accounting Department (10 Tools)
+Expense Categorizer – Sorts expenses from scanned receipts.
+
+Financial Forecasting Bot – Projects future budgets using past data.
+
+Invoice Validator – Flags anomalies in vendor invoices.
+
+Tax Estimator – Calculates estimated tax liabilities.
+
+Report Generator – Automates monthly and annual financial reporting.
+
+Compliance Checker – Ensures adherence to financial regulations.
+
+Ledger Summarizer – Creates summaries of long accounting logs.
+
+Investment Risk Analyzer – Analyzes the risk of financial portfolios.
+
+Payroll Query Bot – Answers employee payroll-related questions.
+
+Budget Optimizer – Suggests areas for cost-cutting or redistribution.
+
+🔹 Administrative & General Operations (10 Tools)
+Document Draft Assistant – Drafts letters, notices, and office documents.
+
+Meeting Scheduler Bot – Coordinates availability and books meetings.
+
+Attendance Pattern Analyzer – Identifies attendance trends.
+
+Task Prioritizer – Helps prioritize daily administrative tasks.
+
+Office Inventory Tracker – Tracks and restocks supplies using AI.
+
+Automated Policy Generator – Generates workplace policies from templates.
+
+Resume Parser – Filters and scores job applicants' resumes.
+
+Event Planning Assistant – Helps plan logistics for seminars/conferences.
+
+Digital Form Generator – Creates forms and automates processing.
+
+Time Log Summarizer – Converts time-tracking logs into reports.
