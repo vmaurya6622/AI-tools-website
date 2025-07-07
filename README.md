@@ -95,7 +95,7 @@ Once a tool is selected and input is provided, the response is shown in the dyna
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/ai-tools-website.git
+gh repo clone vmaurya6622/AI-tools-website
 cd ai-tools-website
 2. Run Locally
 Ensure Ollama and the required model (e.g., llama3) are running.
