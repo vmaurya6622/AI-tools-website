@@ -1,105 +1,140 @@
-# 🧠 AI Tools Hub
 
-AI Tools Hub is a web-based application that consolidates various powerful AI utilities across domains like Communication, Engineering, and Computer Science. Users can interact with tools like summarizers, translators, code generators, and circuit designers — all from one dynamic interface.
+# 🧠 AI GeM Document Analyzer
 
-![AI Tools Hub UI](img.png)
+A smart document analysis tool that classifies and summarizes government or technical PDF files like tenders, certificates, scripts, and receipts. It is especially tailored for analyzing documents uploaded to the Government e-Marketplace (GeM) portal or similar platforms.
 
-## 🚀 Features
+![AI GeM Document Analyzer UI](./screenshots/3.jpeg)
 
-### 🧰 General Tools
-- **Summarizer** – Summarize lengthy texts instantly.
-- **Formula Solver** – Solve math problems.
-- **Translator** – Translate text between languages.
-- **Explainer** – Break down complex topics.
-- **Code Generator** – Generate code based on prompts.
-- **Grammar Fixer** – Correct grammar mistakes.
+## 💡 Features
 
-### 📣 Communication Tools
-- Email Tone Optimizer
-- Press Release Generator
-- Speech Writer AI
-- Crisis Comm Assistant
-- Memo Generator
-- Social Media Content Generator
-- Sentiment Analyzer
-- Slide Assistant
-- Voice Enhancer
-- Meeting Summarizer
+- Upload and analyze multiple PDF documents
+- Automatically classifies document type
+- Summarizes the content in a tabular form
+- Supports scripts, certificates, research papers, receipts, technical guides, and tenders
+- Simple, beautiful web interface with dynamic updates
 
-### ⚙️ Electronics Engineering Tools
-- Circuit Design Helper
-- Signal Analysis Tool
-- PCB Layout Validator
-- Component Recommender
-- IoT Config Wizard
-- Power Optimizer
-- Schematic to Code Generator
-- Sensor Analyzer
-- Embedded Debug Helper
-- RF Visualizer
+---
 
-### 💻 CS / IT Tools
-- Code Explainer
-- Bug Fix Assistant
-- API Integration Wizard
-- System Architecture Mapper
-- Version Control Summarizer
-- SQL Query Generator
-- Network Troubleshooter AI
-- Codebase Search Assistant
-- Algorithm Visualizer
-- Tech Stack Suggestion Tool
+## 📁 Folder Structure
 
-## 🖼️ Interface Preview
+```
+AI PDF Reviewer/
+├── app.py                     # Optional Flask launcher
+├── main.py                    # Main Streamlit app
+├── runner.bat                 # Windows batch script to run app
+├── ideas.txt                  # Notes or development ideas
+├── new.docx                   # Documentation/notes
+├── static/
+│   ├── asus.css               # Custom CSS
+│   ├── style.js               # Custom JS
+│   └── thumbnails/
+│       └── background.mp4     # Background animation
+├── templates/
+│   └── index.html             # (Legacy) HTML Template
+├── uploads/                   # Sample uploads for demo
+│   ├── document_summary.csv   # Output summary table
+│   ├── hello.pdf              # Example document
+│   └── ...                    # More sample PDFs
+```
 
-The interface dynamically categorizes tools and uses a video background for a futuristic, immersive feel:
+---
 
-![Interface Preview](img.png)
+## 🖼 UI Screenshots
 
-## 🧩 Architecture
+### 1. Launch Page
 
-- **HTML/CSS**: TailwindCSS is used for responsive design and clean UI.
-- **JavaScript**: Frontend logic in `style.js` handles tool selection, input validation, and output rendering.
-- **Backend Integration**: Sends prompts to an AI model (e.g., LLaMA 3 via Ollama).
+![Launch Screen](./screenshots/1.jpeg)
 
-## 🗂️ Project Structure
-  ├── index.html # Main page UI
-  ├── style.js # Logic to manage tools and fetch AI output
-  ├── README.md # Documentation
-  ├── LICENSE # Open source license
-  ├── runner.bat # (Optional) Local launcher
-  └── uploads/
-  └── img.png # Screenshot used in documentation
+### 2. Upload and Analyze
 
-## 🧠 How it Works
+![Analyzing Screen](./screenshots/2.jpeg)
 
-1. Select an AI tool from any category.
-2. Enter your input text.
-3. Click “Run AI Tool.”
-4. The tool generates a response using a locally hosted AI model (e.g., Ollama’s LLaMA 3).
+### 3. Results Display
 
-> Example prompt generation is handled by `toolTemplates` in `style.js`.
+![Results Table](./screenshots/3.jpeg)
 
-## 📷 Screenshots
+---
 
-### 🔎 Tool Selection
+## 🚀 Getting Started
 
-![Tool Selection](img2.png)
+### ✅ Requirements
 
-### 📤 Output Section
+- Python 3.8+
+- pip (Python package manager)
 
-Once a tool is selected and input is provided, the response is shown in the dynamic output box.
+### 📦 Installation
 
-## 🔧 Setup Instructions
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/ai-pdf-reviewer.git
+   cd ai-pdf-reviewer
+   ```
 
-### 1. Clone Repository
+2. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+> If `requirements.txt` is not available, install manually:
 ```bash
-gh repo clone vmaurya6622/AI-tools-website
-cd ai-tools-website
-2. Run Locally
-Ensure Ollama and the required model (e.g., llama3) are running.
+pip install streamlit pandas PyMuPDF python-docx
+```
 
-Then, simply open index.html in a browser or launch via:
-runner.bat
+---
 
+## 🧠 How to Run
+
+You can run the app in two ways:
+
+### Option 1: Using Streamlit (Recommended)
+```bash
+streamlit run main.py
+```
+
+### Option 2: Using Flask (Optional)
+```bash
+python app.py
+```
+
+### Option 3: On Windows (Double Click)
+Run the provided `runner.bat` file.
+
+---
+
+## 📂 Upload Sample PDFs
+
+Upload your PDF files using the “Choose Folder” button in the web UI. The system will automatically analyze the files and present:
+
+- Serial Number
+- PDF File Name
+- Document Type
+- Summary of the Document
+
+---
+
+## 🔧 Customization
+
+- Modify **static/asus.css** to change UI theme
+- Update **templates/index.html** if using Flask
+- Background animation can be changed by replacing `background.mp4`
+
+---
+
+## 📌 Notes
+
+- This tool is ideal for bulk document summarization
+- The current model uses pattern-based text classification
+- Future upgrades may include LLM-based classification and semantic search
+
+---
+
+## 🧑‍💻 Author
+
+**Vishal Kumar Maurya**  
+IIIT Delhi | Computer Science and Applied Mathematics
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
